@@ -2588,13 +2588,13 @@ A & =\left(\begin{array}{cccc}
 0 & 0 & 0 & 1
 \end{array}\right)\\
  & \cong\left(\begin{array}{cccc}
-0 & 0 & 0 & \left(p_{x}-x_{\text{wall}}\right)\cdot x_{\text{wall}}\\
+0 & 0 & 0 & \left(p_{x}-l_{x}\right)\cdot x_{\text{wall}}\\
 0 & x_{\text{wall}}-l_{x} & 0 & \left(p_{x}-x_{\text{wall}}\right)l_{y}\\
 0 & 0 & x_{\text{wall}}-l_{x} & \left(p_{x}-x_{\text{wall}}\right)l_{z}\\
 0 & 0 & 0 & p_{x}-l_{x}
 \end{array}\right)\\
  & \cong\left(\begin{array}{cccc}
-x_{\text{wall}} & 0 & 0 & -\left(x_{\text{wall}}\right)^{2}\\
+x_{\text{wall}} & 0 & 0 & -l_{x}x_{\text{wall}}\\
 l_{y} & x_{\text{wall}}-l_{x} & 0 & -x_{\text{wall}}l_{y}\\
 l_{z} & 0 & x_{\text{wall}}-l_{x} & -x_{\text{wall}}l_{z}\\
 1 & 0 & 0 & -l_{x}
@@ -2607,7 +2607,7 @@ l_{z} & 0 & x_{\text{wall}}-l_{x} & -x_{\text{wall}}l_{z}\\
 \begin_inset Formula 
 \[
 \boxed{A=\left(\begin{array}{cccc}
-x_{\text{wall}} & 0 & 0 & -\left(x_{\text{wall}}\right)^{2}\\
+x_{\text{wall}} & 0 & 0 & -l_{x}x_{\text{wall}}\\
 l_{y} & x_{\text{wall}}-l_{x} & 0 & -x_{\text{wall}}l_{y}\\
 l_{z} & 0 & x_{\text{wall}}-l_{x} & -x_{\text{wall}}l_{z}\\
 1 & 0 & 0 & -l_{x}
@@ -2627,7 +2627,7 @@ l_{z} & 0 & x_{\text{wall}}-l_{x} & -x_{\text{wall}}l_{z}\\
 \begin_inset Formula 
 \begin{align*}
 Ap & =\left(\begin{array}{cccc}
-x_{\text{wall}} & 0 & 0 & -\left(x_{\text{wall}}\right)^{2}\\
+x_{\text{wall}} & 0 & 0 & -l_{x}x_{\text{wall}}\\
 l_{y} & x_{\text{wall}}-l_{x} & 0 & -x_{\text{wall}}l_{y}\\
 l_{z} & 0 & x_{\text{wall}}-l_{x} & -x_{\text{wall}}l_{z}\\
 1 & 0 & 0 & -l_{x}
@@ -2638,25 +2638,25 @@ p_{z}\\
 1
 \end{array}\right)\\
  & =\left(\begin{array}{c}
-p_{x}x_{\text{wall}}-\left(x_{\text{wall}}\right)^{2}\\
+p_{x}x_{\text{wall}}-l_{x}x_{\text{wall}}\\
 p_{x}l_{y}+p_{y}\left(x_{\text{wall}}-l_{x}\right)-x_{\text{wall}}l_{y}\\
 p_{x}l_{z}+p_{z}\left(x_{\text{wall}}-l_{x}\right)-x_{\text{wall}}l_{z}\\
 p_{x}-l_{x}
 \end{array}\right)\\
  & =\left(\begin{array}{c}
-x_{\text{wall}}\left(p_{x}-x_{\text{wall}}\right)\\
+x_{\text{wall}}\left(p_{x}-l_{x}\right)\\
 p_{y}\left(x_{\text{wall}}-l_{x}\right)+p_{x}l_{y}-x_{\text{wall}}l_{y}\\
 p_{z}\left(x_{\text{wall}}-l_{x}\right)+p_{x}l_{z}-x_{\text{wall}}l_{z}\\
 p_{x}-l_{x}
 \end{array}\right)\\
  & =\left(\begin{array}{c}
-x_{\text{wall}}\left(p_{x}-x_{\text{wall}}\right)\\
+x_{\text{wall}}\left(p_{x}-l_{x}\right)\\
 p_{y}\left(x_{\text{wall}}-l_{x}\right)+\left(p_{x}-x_{\text{wall}}\right)l_{y}\\
 p_{z}\left(x_{\text{wall}}-l_{x}\right)+\left(p_{x}-x_{\text{wall}}\right)l_{z}\\
 p_{x}-l_{x}
 \end{array}\right)\\
  & \cong\left(\begin{array}{c}
-x_{\text{wall}}\left(\frac{p_{x}-x_{\text{wall}}}{p_{x}-l_{x}}\right)\\
+x_{\text{wall}}\\
 p_{y}\left(\frac{x_{\text{wall}}-l_{x}}{p_{x}-l_{x}}\right)+\left(\frac{p_{x}-x_{\text{wall}}}{p_{x}-l_{x}}\right)l_{y}\\
 p_{z}\frac{\left(x_{\text{wall}}-l_{x}\right)}{p_{x}-l_{x}}+\left(\frac{p_{x}-x_{\text{wall}}}{p_{x}-l_{x}}\right)l_{z}\\
 1
@@ -2947,13 +2947,13 @@ status open
 \begin_inset Formula 
 \begin{align*}
 A= & \left(\begin{array}{cccc}
-x_{\text{wall}} & 0 & 0 & -\left(x_{\text{wall}}\right)^{2}\\
+x_{\text{wall}} & 0 & 0 & -l_{x}x_{\text{wall}}\\
 l_{y} & x_{\text{wall}}-l_{x} & 0 & -x_{\text{wall}}l_{y}\\
 l_{z} & 0 & x_{\text{wall}}-l_{x} & -x_{\text{wall}}l_{z}\\
 1 & 0 & 0 & -l_{x}
 \end{array}\right)\\
  & =\left(\begin{array}{cccc}
-5 & 0 & 0 & -25\\
+5 & 0 & 0 & 10\\
 3 & 7 & 0 & -15\\
 1 & 0 & 7 & -5\\
 1 & 0 & 0 & 2
@@ -2966,7 +2966,7 @@ l_{z} & 0 & x_{\text{wall}}-l_{x} & -x_{\text{wall}}l_{z}\\
 \begin_inset Formula 
 \[
 \boxed{A=\left(\begin{array}{cccc}
-5 & 0 & 0 & -25\\
+5 & 0 & 0 & 10\\
 3 & 7 & 0 & -15\\
 1 & 0 & 7 & -5\\
 1 & 0 & 0 & 2
@@ -6735,6 +6735,14 @@ P_{20}=\left(0,2,0\right),P_{21}=\left(0,2,1\right)
 \noun default
 \color inherit
 ולכן הם 
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+ )ולכן גם 
+\begin_inset Formula $G^{\infty}$
+\end_inset
+
+.(
 \end_layout
 
 \end_body
