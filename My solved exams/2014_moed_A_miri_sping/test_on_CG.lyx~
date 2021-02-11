@@ -1,0 +1,4885 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extarticle
+\begin_preamble
+\def\HeblatexEncoding{HE8}
+\def\HeblatexEncodingFile{he8enc}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "David CLM"
+\font_typewriter "default" "David CLM"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\branch הוכחות
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch דוגמאות
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch תרגילים
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch הערות
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth -2
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\bulletLaTeX 0 "\fontfamily{cmr}\fontencoding{T1}\selectfont\textbullet"
+\bulletLaTeX 1 "\fontfamily{cmr}\fontencoding{T1}\selectfont\normalfont\bfseries\textendash"
+\bulletLaTeX 2 "\fontfamily{cmr}\fontencoding{T1}\selectfont\textasteriskcentered"
+\bullet 3 0 24 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+מבחן במקצוע גרפיקה ממוחשבת
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\unote}[2]{\overset{#2}{\overbrace{#1}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dnote}[2]{\underset{#2}{\underbrace{#1}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\func}[3]{#1:#2\longrightarrow#3}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pd}[2]{\frac{\partial#1}{\partial#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\rd}[2]{\frac{d#1}{d#2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pdd}[2]{\frac{\partial^{2}#1}{\partial#2^{2}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\rdd}[2]{\frac{d^{2}#1}{d#2^{2}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\dom}{\text{dom}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\operatorname}[1]{\text{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\diag}{\text{diag}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+סעיפים
+\end_layout
+
+\begin_layout Plain Layout
+מספרים
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+אותיות
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+א
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ג
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ד
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ה
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ז
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ח
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+חלוקה לחלקים
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Subsection
+חלק
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+חלק
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+חלק
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsection
+חלק
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+סעיפים שבתוך כל חלק
+\end_layout
+
+\begin_layout Plain Layout
+מספרים
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+אותיות
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+א
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ג
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ד
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ה
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ז
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\begin_layout Subsubsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ח
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה מספר
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+א
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+flat shading
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+קלט:
+\series default
+ 
+\lang english
+mesh model
+\lang hebrew
+ מורכב מפוליגונים )בקורס עסקנו במש משולשים(.הקלט צריך לציין כל הצמתים שמשתתפים
+ בכל פאה בסדר אחיד מוסכם מראש* )לדוג' - נגד כיוון השעון( כיוון שההנחה היא
+ שהצופה מתבונן על האוביקט מבחוץ.
+\end_layout
+
+\begin_layout Standard
+בהצללה זו אופן חישוב הפיקסל לכל צבע בכל פוליגון נעשה אופן הבא:
+\end_layout
+
+\begin_layout Standard
+לכל פאה אנו תחילה מחשבים במהלך קבלת הקלט את ה
+\begin_inset Formula $\text{face normal}$
+\end_inset
+
+ שלה.)לדוגמא עבור מש משולשים לכל פאה נבצע מכפלה וקטורית בין הצמתים שבאותה
+ הפאה לפי הסדר * וננרמל את התוצאה כך שתוצאת המכפלה תהיה ווקטור מנורמל שמאונך
+ לפאה.נעשה זאת לכל פאה.
+\end_layout
+
+\begin_layout Standard
+עבור כל פיקסל שנרצה לצבוע,על מנת לבצע את הצביעה שלו עלינו לבחור את הנורמל
+ המתאים:
+\end_layout
+
+\begin_layout Enumerate
+נמצא את הפאה שאליה שייך הפיקסל.
+\end_layout
+
+\begin_layout Enumerate
+ניקח את ה
+\begin_inset Formula $\text{face normal}$
+\end_inset
+
+ המתאים שחישבנו בקלט.)לאחר שעבר את הטרנס' המתאימות ונורמל חזרה( עם הנורמל
+ הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל נבצע את חישובי התאורה כרגיל.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+שימוש בשיטה זו ייצבע את כל הפאה בצבע אחיד
+\end_layout
+
+\begin_layout Standard
+כ
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+gouraud shading
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+קלט:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset space ~
+\end_inset
+
+
+\series default
+ 
+\lang english
+mesh model
+\lang hebrew
+ מורכב מפוליגונים )בקורס עסקנו במש משולשים(.
+\end_layout
+
+\begin_layout Itemize
+לכל פאה:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכל צומת שמשתתפת בפאה:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מקבלים 
+\begin_inset Formula $\text{vertex normal}$
+\end_inset
+
+ מתאים לו
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+)אם זה לא נתון בקלט קיימות דרכים לחשב נורמל זה ידנית (
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Remark
+\begin_inset Formula $\text{vertex normals}$
+\end_inset
+
+ הם לא חד ערכיים עבור צומת נתון.אם הצומת מתתפת בכמה פאות אז יהיה לה כמות
+ 
+\begin_inset Formula $\text{vertex normals}$
+\end_inset
+
+ כמספר הפאות.)מניח בתיאור כאן כי יש 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים בכל פאה,בתרגיל בית שלנו 
+\begin_inset Formula $n=3$
+\end_inset
+
+ - מש משולשי(
+\end_layout
+
+\begin_layout Standard
+בהצללה זו אופן חישוב הפיקסל לכל צבע בכל פוליגון נעשה אופן הבא:
+\end_layout
+
+\begin_layout Standard
+עבור כל פיקסל שנרצה לצבוע,על מנת לבצע את הצביעה שלו עלינו:
+\end_layout
+
+\begin_layout Enumerate
+נמצא את הפאה שאליה שייך הפיקסל.)ונמצא את הקור' הבריצנטריות המתאימות 
+\begin_inset Formula $\left\{ \alpha_{i}\right\} _{i=1}^{n}$
+\end_inset
+
+( 
+\end_layout
+
+\begin_layout Enumerate
+נמצא את כל הקודקודים המתאימים לפאה זו.
+\begin_inset Formula $v_{1},\ldots,v_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+עבור כל קודקוד כזה נחשב את התאורה בקוקוד על ידי שימוש ב
+\begin_inset Formula $\text{vertex normals}$
+\end_inset
+
+ המתאים לו )כפי שהתקבל בקלט ולאחר שעבר טרנס' מתאימה( לקבלת 
+\begin_inset Formula $c_{1},\ldots,c_{n}$
+\end_inset
+
+.)
+\begin_inset Formula $n$
+\end_inset
+
+ צבעים(
+\end_layout
+
+\begin_layout Enumerate
+נצבע את הפיקסל על ידי אינטרפולציה על 
+\series bold
+הצבע שחושב מהשלב הקודם
+\series default
+ הקור' הבריצנטריות המתאימות ל
+\begin_inset Formula $\sum_{i=1}^{n}\alpha_{i}c_{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+phong shading
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset space ~
+\end_inset
+
+
+\series default
+ 
+\lang english
+mesh model
+\lang hebrew
+ מורכב מפוליגונים )בקורס עסקנו במש משולשים(.
+\end_layout
+
+\begin_layout Itemize
+לכל פאה:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכל צומת שמשתתפת בפאה:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מקבלים 
+\begin_inset Formula $\text{vertex normal}$
+\end_inset
+
+ מתאים לו
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+)אם זה לא נתון בקלט קיימות דרכים לחשב נורמל זה ידנית (
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+בהצללה זו אופן חישוב הפיקסל לכל צבע בכל פוליגון נעשה אופן הבא:
+\end_layout
+
+\begin_layout Standard
+עבור כל פיקסל שנרצה לצבוע,על מנת לבצע את הצביעה שלו עלינו:
+\end_layout
+
+\begin_layout Enumerate
+נמצא את הפאה שאליה שייך הפיקסל.)ונמצא את הקור' הבריצנטריות המתאימות 
+\begin_inset Formula $\left\{ \alpha_{i}\right\} _{i=1}^{n}$
+\end_inset
+
+( 
+\end_layout
+
+\begin_layout Enumerate
+נמצא את כל הקודקודים המתאימים לפאה זו.
+\begin_inset Formula $v_{1},\ldots,v_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+עבור כל קודקוד כזה נסמן את ה
+\begin_inset Formula $\text{vertex normals}$
+\end_inset
+
+ המתאים לו על ידי 
+\begin_inset Formula $n_{1},\ldots,n_{n}$
+\end_inset
+
+ )נורמלים אלו לאחר הטנרנס' המתאימה(
+\end_layout
+
+\begin_layout Enumerate
+נחשב את 
+\series bold
+הנורמל המתאים לפיקסל
+\series default
+ שאנו רוצים לצבוע על ידי אינטרפולציה של הקור' הבריצנטריות המתאימות ל
+\begin_inset Formula $n=\sum_{i=1}^{n}\alpha_{i}n_{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+נצבע את חישוב התאורה על הפיקסל על ידי הנורמל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+בכל השיטות ,במידה ובשלב כלשהו ערוץ צבע בצבע שהתקבל חרג מהגבולות המתאימים
+ , נבצע 
+\begin_inset Formula $\text{clipping}$
+\end_inset
+
+ מתאים.
+\end_layout
+
+\begin_layout Remark
+)לדוגמא אם ערוץ אדום בצבע זה יצא 
+\begin_inset Formula $4$
+\end_inset
+
+ והגבול הוא 
+\begin_inset Formula $1$
+\end_inset
+
+אז הצבע הסופי יהיה בערוץ האדום 
+\begin_inset Formula $1$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אחד ההבדלים בין השיטות:
+\end_layout
+
+\begin_layout Itemize
+הבדלים ברינדור של 
+\begin_inset Formula $\text{garude}$
+\end_inset
+
+ או של 
+\begin_inset Formula $\text{phong}$
+\end_inset
+
+ אנו יכולים להשיג על ידי 
+\begin_inset Formula $\text{vertex normals}$
+\end_inset
+
+ שונים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קשה לי להבין למה בדיוק התכוון הכותב של השאלה אז ניסיתי לסכם את הנושא בצורה
+ מסודרת.
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\end_layout
+
+\begin_layout Remark
+האם 
+\begin_inset Formula $X$
+\end_inset
+
+ מסתובב יחד עם המשולש?למען ההגיון אני מניח שכן.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $P_{0},P_{1},P_{2}$
+\end_inset
+
+ ו 
+\begin_inset Formula $C_{0},C_{1},C_{2}$
+\end_inset
+
+ צבעי המשולש וקוקודי המשולש.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $X=\left(X_{x},X_{y}\right)$
+\end_inset
+
+ הקור' של הפיקסל שבטוח המשולש.
+\end_layout
+
+\begin_layout Standard
+נניח בה
+\begin_inset Quotes erd
+\end_inset
+
+כ כי הצלעות שעילהם יבוצע ה
+\begin_inset Formula $\text{scanline}$
+\end_inset
+
+ האופקי הם 
+\begin_inset Formula $P_{0}P_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $P_{0}P_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי לפי השיטתה המתוארת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall t\in\left[0,1\right]:C^{P_{0}P_{1}}\left(t\right)=tC_{0}+\left(1-t\right)C_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall t\in\left[0,1\right]:C^{P_{0}P_{2}}\left(t\right)=tC_{0}+\left(1-t\right)C_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula 
+\[
+X_{y}=\left(t_{01}P_{0}+\left(1-t_{01}\right)P_{1}\right)_{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X_{y}=\left(t_{02}P_{0}+\left(1-t_{02}\right)P_{2}\right)_{y}
+\]
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $X$
+\end_inset
+
+ בתוך המשולש ולכן :
+\begin_inset Formula 
+\[
+\exists t_{\text{final}}\in\left[0,1\right]:X_{x}=t_{\text{final}}\left(\left(t_{01}P_{0}+\left(1-t_{01}\right)P_{1}\right)_{x}\right)+\left(1-t_{\text{final}}\right)\left(\left(t_{02}P_{0}+\left(1-t_{02}\right)P_{2}\right)_{x}\right)
+\]
+
+\end_inset
+
+אזי 
+\begin_inset Formula 
+\[
+C=t_{\text{final}}C^{P_{0}P_{1}}\left(t_{01}\right)+\left(1-t_{\text{final}}\right)C^{P_{0}P_{2}}\left(t_{10}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+דיי בטוח שכן..לחשוב על הוכחה בהמשך
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size huge
+להבין איך להוכיח את זה..לחזור לפה בהמשך
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ג
+\end_layout
+
+\begin_layout Standard
+התשובה יא שלא.
+\end_layout
+
+\begin_layout Standard
+דוגמא נגדית.
+\end_layout
+
+\begin_layout Standard
+יהא המלבן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xymatrix{ & \star\ar@{-}[rd]\\
+\sun\ar@{-}[ru] &  & \sun\ar@{-}[ld]\\
+ & \star\ar@{-}[lu]
+}
+\]
+
+\end_inset
+
+נניח ש 
+\begin_inset Formula $\star$
+\end_inset
+
+ זה צבע שחור ו 
+\begin_inset Formula $\sun$
+\end_inset
+
+ זה צבע לבן.
+\end_layout
+
+\begin_layout Standard
+נסמן את הנקודה 
+\begin_inset Formula $X$
+\end_inset
+
+ במרכז
+\begin_inset Formula 
+\[
+\xymatrix{ & \star\ar@{-}[rd]\\
+\sun\ar@{-}[ru] & X & \sun\ar@{-}[ld]\\
+ & \star\ar@{-}[lu]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי לפי השיטה הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula $X$
+\end_inset
+
+ ייצבע בלבן 
+\begin_inset Formula $\sun$
+\end_inset
+
+ כי ה
+\begin_inset Formula $\text{scanline }$
+\end_inset
+
+ אופקי ושני הקצוות הם באותו הצבע:
+\begin_inset Formula 
+\[
+\xymatrix{ & \star\ar@{-}[rd]\\
+\sun\ar@{-}[ru] & X\ar@{--}[r]\ar@{--}[l] & \sun\ar@{-}[ld]\\
+ & \star\ar@{-}[lu]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסובב את המצולע ב
+\begin_inset Formula $90$
+\end_inset
+
+מעלות לקבלת
+\begin_inset Formula 
+\[
+\xymatrix{ & \sun\ar@{-}[rd]\\
+\star\ar@{-}[ru] & X & \star\ar@{-}[ld]\\
+ & \sun\ar@{-}[lu]
+}
+\]
+
+\end_inset
+
+אזי לפי השיטה הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula $X$
+\end_inset
+
+ ייצבע בשחור 
+\begin_inset Formula $\star$
+\end_inset
+
+ כי ה
+\begin_inset Formula $\text{scanline }$
+\end_inset
+
+ אופקי ושני הקצוות הם באותו הצבע:
+\begin_inset Formula 
+\[
+\xymatrix{ & \sun\ar@{-}[rd]\\
+\star\ar@{-}[ru] & X\ar@{--}[r]\ar@{--}[l] & \star\ar@{-}[ld]\\
+ & \sun\ar@{-}[lu]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן 
+\begin_inset Formula $X$
+\end_inset
+
+ לא יישאר באותו הצבע עבור מקרה זה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה מספר
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+א
+\end_layout
+
+\begin_layout Standard
+תזכורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+תזכורת:
+\end_layout
+
+\begin_layout Plain Layout
+נזכר בזהויות טריגו של מכפלה
+\begin_inset Formula 
+\[
+\begin{array}{l}
+\sin A\cos B=\frac{1}{2}(\sin(A+B)+\sin(A-B))\\
+\cos A\sin B=\frac{1}{2}(\sin(A+B)-\sin(A-B))\\
+\cos A\cos B=\frac{1}{2}(\cos(A+B)+\cos(A-B))\\
+\sin A\sin B=\frac{1}{2}(\cos(A-B)-\cos(A+B))
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ושל סכום 
+\begin_inset Formula 
+\[
+\begin{array}{l}
+\sin(A-B)=\sin A\cos B-\cos A\sin B\\
+\cos(A-B)=\cos A\cos B+\sin A\sin B
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\star:\sin(A+B)=\sin A\cos B+\cos A\sin B
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\star\star:\cos(A+B)=\cos A\cos B-\sin A\sin B
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula 
+\[
+\sin\gamma\cos\alpha+\cos\gamma\sin\alpha\unote ={\star}\sin\left(\gamma+\alpha\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+בנוסף 
+\begin_inset Formula 
+\[
+\cos\gamma\cos\alpha-\sin\gamma\sin\alpha\unote ={\star\star}\cos\left(\gamma+\alpha\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+במקרים של גימבל לוק אנו מבינים כי יש אינסוף מט' שונות לייצוג אותה אוריינטציאה
+ של האובייקטוזה אכן מה שקורה.
+\end_layout
+
+\begin_layout Standard
+לפי ההרצאה המט' שמתארת את פעולת הגימבל נתונה על ידי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+R(\alpha,\beta,\gamma)=R_{z}\cdot R_{y}\cdot R_{x}=\\
+\left[\begin{array}{cccc}
+\cos\gamma\cos\beta & \sin\gamma\cos\alpha+\cos\gamma\sin\beta\sin\alpha & \sin\gamma\sin\alpha-\cos\gamma\sin\beta\cos\alpha & 0\\
+-\sin\gamma\cos\beta & \cos\gamma\cos\alpha-\sin\gamma\sin\beta\sin\alpha & \cos\gamma\sin\alpha+\sin\gamma\sin\beta\cos\alpha & 0\\
+\sin\beta & -\cos\beta\sin\alpha & \cos\beta\cos\alpha & 0\\
+0 & 0 & 0 & 1
+\end{array}\right]
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula 
+\[
+\beta_{x}=\frac{\pi}{3},\beta_{y}=\frac{\pi}{2},\beta_{z}=\frac{\pi}{6}
+\]
+
+\end_inset
+
+ או בסימונים מעלה באופן שקול 
+\begin_inset Formula 
+\[
+\alpha=\frac{\pi}{3},\beta=\frac{\pi}{2},\gamma=\frac{\pi}{6}
+\]
+
+\end_inset
+
+עבור 
+\begin_inset Formula $\beta=\frac{\pi}{2}$
+\end_inset
+
+ אנו רואים כי מתקיים 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+R(\alpha,\frac{1}{2}\pi,\gamma)=R_{z}\cdot R_{y}\cdot R_{x}=\\
+\left[\begin{array}{cccc}
+\cos\gamma\cos\frac{1}{2}\pi & \sin\gamma\cos\alpha+\cos\gamma\sin\frac{1}{2}\pi\sin\alpha & \sin\gamma\sin\alpha-\cos\gamma\sin\frac{1}{2}\pi\cos\alpha & 0\\
+-\sin\gamma\cos\frac{1}{2}\pi & \cos\gamma\cos\alpha-\sin\gamma\sin\frac{1}{2}\pi\sin\alpha & \cos\gamma\sin\alpha+\sin\gamma\sin\frac{1}{2}\pi\cos\alpha & 0\\
+\sin\frac{1}{2}\pi & -\cos\frac{1}{2}\pi\sin\alpha & \cos\frac{1}{2}\pi\cos\alpha & 0\\
+0 & 0 & 0 & 1
+\end{array}\right]=\\
+\left[\begin{array}{cccc}
+0 & \sin\gamma\cos\alpha+\cos\gamma\sin\alpha & \sin\gamma\sin\alpha-\cos\gamma\cos\alpha & 0\\
+0 & \cos\gamma\cos\alpha-\sin\gamma\sin\alpha & \cos\gamma\sin\alpha+\sin\gamma\cos\alpha & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1
+\end{array}\right]=\\
+\unote ={\star}\left[\begin{array}{cccc}
+0 & \sin\left(\gamma+\alpha\right) & \sin\gamma\sin\alpha-\cos\gamma\cos\alpha & 0\\
+0 & \cos\gamma\cos\alpha-\sin\gamma\sin\alpha & \sin\left(\gamma+\alpha\right) & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1
+\end{array}\right]\\
+\unote ={\star\star}\left[\begin{array}{cccc}
+0 & \sin\left(\gamma+\alpha\right) & -\cos\left(\gamma+\alpha\right) & 0\\
+0 & \cos\left(\gamma+\alpha\right) & \sin\left(\gamma+\alpha\right) & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1
+\end{array}\right]
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+כלומר הטרנס' הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל של זוויות אוילר ממושפעת 
+\series bold
+רק מהסכום של 
+\begin_inset Formula $\gamma,\alpha$
+\end_inset
+
+ כלומר עבור 
+\series default
+
+\begin_inset Formula 
+\[
+\beta_{x}=\frac{\pi}{3},\beta_{y}=\frac{\pi}{2},\beta_{z}=\frac{\pi}{6}
+\]
+
+\end_inset
+
+נקבל את אותה האוריינטאציה כמו עבור 
+\begin_inset Formula 
+\[
+\forall\epsilon\in\mathbb{R}:\beta_{x}=\frac{\pi}{3}-\epsilon,\beta_{y}=\frac{\pi}{2},\beta_{z}=\frac{\pi}{6}+\epsilon
+\]
+
+\end_inset
+
+ לדוגמא 
+\begin_inset Formula 
+\[
+\boxed{\beta_{x}=0,\beta_{y}=\frac{\pi}{2},\beta_{z}=\frac{\pi}{6}+\frac{\pi}{3}}
+\]
+
+\end_inset
+
+ ייתן את אותה האויינטריציה.
+\end_layout
+
+\begin_layout Standard
+וזו הדוגמא נגדית אפשרית.
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\end_layout
+
+\begin_layout Standard
+הטרנספורמציה המתאימה תיקח את מרכז הריבוע לנק' 
+\begin_inset Formula $\left(5,5\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{\forall t\in\left[0,1\right]:T\left(t\right)=\left[\begin{array}{ccc}
+1 & 0 & 5t\\
+0 & 1 & 5t\\
+0 & 0 & 1
+\end{array}\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ג
+\end_layout
+
+\begin_layout Standard
+הטרנספורמציה המתאימה תיקח את מרכז הריבוע לנק' 
+\begin_inset Formula $\left(5,5\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בנוסף היא תסובב אותו בזווית של 
+\begin_inset Formula $\frac{\pi}{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נזכר כי מט' סיבוב בזיוית 
+\begin_inset Formula $\theta$
+\end_inset
+
+ נתונה על ידי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R^{\theta}=\left(\begin{array}{cc}
+\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן אנמציה של סיבוב בזווית 
+\begin_inset Formula $\frac{\pi}{4}$
+\end_inset
+
+ באופן חלק נתונה על ידי 
+\begin_inset Formula 
+\[
+\forall t\in\left[0,1\right]:R^{t\cdot\frac{\pi}{4}}\left(t\right)=\left(\begin{array}{cc}
+\cos\left(t\cdot\frac{\pi}{4}\right) & -\sin\left(t\cdot\frac{\pi}{4}\right)\\
+\sin\left(t\cdot\frac{\pi}{4}\right) & \cos\left(t\cdot\frac{\pi}{4}\right)
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכאן נובע כי הרכבה של שני האנמציות הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל תניב את האנמציה הרצויה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\forall t\in\left[0,1\right]:A\left(t\right) & =R^{t\cdot\frac{\pi}{4}}\left(t\right)T\left(t\right)\\
+ & =\left[\begin{array}{ccc}
+\cos\left(t\cdot\frac{\pi}{4}\right) & -\sin\left(t\cdot\frac{\pi}{4}\right) & 5t\\
+\sin\left(t\cdot\frac{\pi}{4}\right) & \cos\left(t\cdot\frac{\pi}{4}\right) & 5t\\
+0 & 0 & 1
+\end{array}\right]
+\end{align*}
+
+\end_inset
+
+קיבלנו כי
+\begin_inset Formula 
+\[
+\boxed{\forall t\in\left[0,1\right]:A\left(t\right)=\left[\begin{array}{ccc}
+\cos\left(t\cdot\frac{\pi}{4}\right) & -\sin\left(t\cdot\frac{\pi}{4}\right) & 5t\\
+\sin\left(t\cdot\frac{\pi}{4}\right) & \cos\left(t\cdot\frac{\pi}{4}\right) & 5t\\
+0 & 0 & 1
+\end{array}\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ ד 
+\end_layout
+
+\begin_layout Standard
+התשובה תשתנה.מכיוון ש
+\size tiny
+
+\begin_inset Formula 
+\[
+\forall t\in\left[0,1\right]:T\left(t\right)\left[\begin{array}{c}
+0\\
+0\\
+1
+\end{array}\right]=\left[\begin{array}{ccc}
+1 & 0 & 5t\\
+0 & 1 & 5t\\
+0 & 0 & 1
+\end{array}\right]\left[\begin{array}{c}
+0\\
+0\\
+1
+\end{array}\right]=\left[\begin{array}{c}
+5t\\
+5t\\
+1
+\end{array}\right]=\left[\begin{array}{c}
+5t\\
+5t
+\end{array}\right]=t\cdot\left[\begin{array}{c}
+5\\
+5
+\end{array}\right]\neq\left[\begin{array}{c}
+2\\
+3
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+על מנת שזה יקרה נשנה את 
+\begin_inset Formula $T$
+\end_inset
+
+ באופן הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall t\in\left[0,\frac{1}{2}\right]:T^{\text{new}}\left(t\right)=\left[\begin{array}{ccc}
+1 & 0 & 2\left(t\cdot2\right)\\
+0 & 1 & 3\left(t\cdot2\right)\\
+0 & 0 & 1
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall t\in\left(\frac{1}{2},1\right]:T^{\text{new}}\left(t\right)=\left[\begin{array}{ccc}
+1 & 0 & 2+3\cdot\left(\left(t-\frac{1}{2}\right)\cdot2\right)\\
+0 & 1 & 3+2\cdot\left(\left(t-\frac{1}{2}\right)\cdot2\right)\\
+0 & 0 & 1
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת 
+\begin_inset Formula 
+\[
+T^{\text{new}}\left(0.5\right)=\left[\begin{array}{c}
+2\\
+3
+\end{array}\right],T^{\text{new}}\left(0\right)=\left[\begin{array}{c}
+0\\
+0
+\end{array}\right],T^{\text{new}}\left(1\right)=\left[\begin{array}{c}
+5\\
+5
+\end{array}\right]
+\]
+
+\end_inset
+
+עבור האנמציה הסופית במקרה זה היא:
+\begin_inset Formula 
+\[
+\boxed{\forall t\in\left[0,1\right]:A\left(t\right)=\begin{cases}
+\left[\begin{array}{ccc}
+\cos\left(t\cdot\frac{\pi}{4}\right) & -\sin\left(t\cdot\frac{\pi}{4}\right) & 2\left(t\cdot2\right)\\
+\sin\left(t\cdot\frac{\pi}{4}\right) & \cos\left(t\cdot\frac{\pi}{4}\right) & 3\left(t\cdot2\right)\\
+0 & 0 & 1
+\end{array}\right] & t\in\left[0,\frac{1}{2}\right]\\
+\left[\begin{array}{ccc}
+\cos\left(t\cdot\frac{\pi}{4}\right) & -\sin\left(t\cdot\frac{\pi}{4}\right) & 2+3\cdot\left(\left(t-\frac{1}{2}\right)\cdot2\right)\\
+\sin\left(t\cdot\frac{\pi}{4}\right) & \cos\left(t\cdot\frac{\pi}{4}\right) & 3+2\cdot\left(\left(t-\frac{1}{2}\right)\cdot2\right)\\
+0 & 0 & 1
+\end{array}\right] & t\in\left(\frac{1}{2},1\right]
+\end{cases}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+נראלי שזה בסדר..קליל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה מספר
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+T:\mathbb{R}^{3}\rightarrow\mathbb{R}^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+T\left(x\right)=Ax+b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\frac{x_{4}-x_{3}}{x_{2}-x_{1}}=\alpha
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+צ
+\begin_inset Quotes erd
+\end_inset
+
+ל:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\frac{x_{4}-x_{3}}{x_{2}-x_{1}}=\frac{T\left(x_{4}\right)-T\left(x_{3}\right)}{T\left(X_{2}\right)-T\left(x_{1}\right)}
+\]
+
+\end_inset
+
+הוכחה:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align*}
+ & \frac{x_{4}-x_{3}}{x_{2}-x_{1}}=\frac{T\left(x_{4}\right)-T\left(x_{3}\right)}{T\left(X_{2}\right)-T\left(x_{1}\right)}\\
+\iff & \frac{x_{4}-x_{3}}{x_{2}-x_{1}}=\frac{\left(Ax_{4}+b\right)-\left(Ax_{3}+b\right)}{\left(Ax_{2}+b\right)-\left(Ax_{1}+b\right)}\\
+\iff & \frac{x_{4}-x_{3}}{x_{2}-x_{1}}=\frac{\left(Ax_{4}+\cancel{b}\right)-\left(Ax_{3}+\cancel{b}\right)}{\left(Ax_{2}+\cancel{b}\right)-\left(Ax_{1}+\cancel{b}\right)}\\
+\iff & \frac{x_{4}-x_{3}}{x_{2}-x_{1}}=\frac{Ax_{4}-Ax_{3}}{Ax_{2}-Ax_{1}}\\
+\iff & \frac{x_{4}-x_{3}}{x_{2}-x_{1}}=\frac{A\left(x_{4}-x_{3}\right)}{A\left(x_{2}-x_{1}\right)}\\
+\iff\\
+\iff & 1=1\\
+\iff & \text{True}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+___
+\end_layout
+
+\begin_layout Claim
+טענת עזר.
+ תהא 
+\begin_inset Formula $A:\mathbb{R}^{3}\rightarrow\mathbb{R}^{3}$
+\end_inset
+
+ טרנס' לינארית אזי לכל 
+\begin_inset Formula $2$
+\end_inset
+
+ נקודות 
+\begin_inset Formula $y_{1},y_{2}\in\mathbb{R}^{3}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\frac{y_{1}}{y_{2}}=\frac{Ay_{1}}{Ay_{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Formula $A:\mathbb{R}^{3}\rightarrow\mathbb{R}^{3}$
+\end_inset
+
+ טרנס' לינארית ולכן קיימת מט' 
+\begin_inset Formula $B\in\mathbb{R}^{3\times3}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $z\in\mathbb{R}^{3}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $Az=Bz$
+\end_inset
+
+.נסמן את איברי 
+\begin_inset Formula $B$
+\end_inset
+
+באופן הבא 
+\begin_inset Formula 
+\[
+\exists a,b,c,d,e,f,g,h,i\in\mathbb{R}:B=\left[\begin{array}{ccc}
+a & b & c\\
+d & e & f\\
+g & h & i
+\end{array}\right]
+\]
+
+\end_inset
+
+ולכן נקבל כי 
+\begin_inset Formula 
+\[
+\forall k\in\mathbb{R}^{3},k=\left(k_{x},k_{y},k_{z}\right):Ak=Bk=\left[\begin{array}{c}
+ak_{x}+bk_{y}+ck_{z}\\
+dk_{x}+ek_{y}+fk_{z}\\
+gk_{x}+hk_{y}+ik_{z}
+\end{array}\right]
+\]
+
+\end_inset
+
+ולכן מכאן נובע כי 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{y_{1}}{y_{2}}=$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \frac{Ay_{1}}{Ay_{2}}\\
+ & =\frac{\left[\left[y_{1}\right]_{x},\left[y_{1}\right]_{y},\left[y_{1}\right]_{z}\right]}{\left[\left[y_{2}\right]_{x},\left[y_{2}\right]_{y},\left[y_{2}\right]_{z}\right]}\\
+ & =\frac{\left[a\left[y_{1}\right]_{x}+b\left[y_{1}\right]_{y}+c\left[y_{1}\right]_{y},d\left[y_{1}\right]_{x}+e\left[y_{1}\right]_{y}+f\left[y_{1}\right]_{y},g\left[y_{1}\right]_{z}+h\left[y_{1}\right]_{z}+i\left[y_{1}\right]_{z}\right]}{\left[a\left[y_{2}\right]_{x}+b\left[y_{2}\right]_{y}+c\left[y_{2}\right]_{y},d\left[y_{2}\right]_{x}+e\left[y_{2}\right]_{y}+f\left[y_{2}\right]_{y},g\left[y_{2}\right]_{z}+h\left[y_{2}\right]_{z}+i\left[y_{2}\right]_{z}\right]}\\
+ & =\frac{\left(\left[a\left[y_{1}\right]_{x},d\left[y_{1}\right]_{x},g\left[y_{1}\right]_{x}\right]\right)+\left(\left[b\left[y_{1}\right]_{y},e\left[y_{1}\right]_{y},h\left[y_{1}\right]_{y}\right]\right)+\left(\left[c\left[y_{1}\right]_{z},f\left[y_{1}\right]_{z},i\left[y_{1}\right]_{z}\right]\right)}{\left(\left[a\left[y_{2}\right]_{x},d\left[y_{2}\right]_{x},g\left[y_{2}\right]_{x}\right]\right)+\left(\left[b\left[y_{2}\right]_{y},e\left[y_{2}\right]_{y},h\left[y_{2}\right]_{y}\right]\right)+\left(\left[c\left[y_{2}\right]_{z},f\left[y_{2}\right]_{z},i\left[y_{2}\right]_{z}\right]\right)}\\
+ & =\frac{\left[y_{1}\right]_{x}\left(a,d,g\right)+\left[y_{1}\right]_{y}\left(b,e,h\right)+\left[y_{1}\right]_{z}\left(c,f,i\right)}{\left[y_{2}\right]_{x}\left(a,d,g\right)+\left[y_{2}\right]_{y}\left(b,e,h\right)+\left[y_{2}\right]_{z}\left(c,f,i\right)}\\
+\\
+\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Claim
+כ
+\end_layout
+
+\begin_layout Claim
+\begin_inset Formula $\mathbb{R}^{3}\rightarrow\mathbb{R}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+תוכן
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ & \alpha=\frac{T\left(x_{4}\right)-T\left(x_{3}\right)}{T\left(X_{2}\right)-T\left(x_{1}\right)}\\
+\iff & \left(T\left(X_{2}\right)-T\left(x_{1}\right)\right)\alpha=\left(T\left(x_{4}\right)-T\left(x_{3}\right)\right)\\
+\iff & \left(Ax_{2}+b-\left(Ax_{1}+b\right)\right)\alpha=\left(Ax_{4}+b-\left(Ax_{3}+b\right)\right)\\
+\iff & \left(Ax_{2}-Ax_{1}\right)\alpha=\left(Ax_{4}-Ax_{3}\right)\\
+\iff & A\left(x_{2}-x_{1}\right)\alpha=A\left(x_{4}-x_{3}\right)\\
+\iff & A\left(x_{2}-x_{1}\right)\alpha=A\left(x_{4}-x_{3}\right)\\
+\Uparrow\\
+\\
+\iff & \left(x_{2}-x_{1}\right)\alpha=\left(x_{4}-x_{3}\right)\\
+\iff & \alpha=\frac{\left(x_{4}-x_{3}\right)}{\left(x_{2}-x_{1}\right)}\\
+ & \text{True}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הראנו כי 
+\begin_inset Formula $\alpha=\frac{T\left(x_{4}\right)-T\left(x_{3}\right)}{T\left(X_{2}\right)-T\left(x_{1}\right)}$
+\end_inset
+
+ נתון כי 
+\begin_inset Formula $\alpha=\frac{\left(x_{4}-x_{3}\right)}{\left(x_{2}-x_{1}\right)}$
+\end_inset
+
+ ולכן הוכחנו כי 
+\begin_inset Formula 
+\[
+\frac{\left(x_{4}-x_{3}\right)}{\left(x_{2}-x_{1}\right)}=\frac{T\left(x_{4}\right)-T\left(x_{3}\right)}{T\left(X_{2}\right)-T\left(x_{1}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\end_layout
+
+\begin_layout Standard
+לא בהכרח משמר זוויות.לראייה
+\end_layout
+
+\begin_layout Standard
+נזכר בשקף המהמם הבא:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename pasted1.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן להיווכח כי טרנס' מסוג 
+\begin_inset Formula $\text{shear}$
+\end_inset
+
+ אינה משמרת זוויות.
+\end_layout
+
+\begin_layout Standard
+לודגמא המט' 
+\begin_inset Formula $\left(\begin{array}{ccc}
+1 & 0 & 0\\
+1 & 1 & 0\\
+0 & 0 & 1
+\end{array}\right)$
+\end_inset
+
+ מבצעת 
+\begin_inset Formula $\text{shear}$
+\end_inset
+
+ היא טרנס' אפינית חוקית )כי היא מתוארת על ידי מט'(.נראה כי אינה משמרת זוויות.
+\end_layout
+
+\begin_layout Standard
+באוןפ כללי 
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccc}
+1 & 0 & 0\\
+1 & 1 & 0\\
+0 & 0 & 1
+\end{array}\right)\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=\left(\begin{array}{c}
+x\\
+x+y\\
+z
+\end{array}\right)
+\]
+
+\end_inset
+
+עבור הווקטור 
+\begin_inset Formula $\left(1,0,0\right)$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccc}
+1 & 0 & 0\\
+1 & 1 & 0\\
+0 & 0 & 1
+\end{array}\right)\left(\begin{array}{c}
+1\\
+0\\
+0
+\end{array}\right)=\left(\begin{array}{c}
+1\\
+1\\
+0
+\end{array}\right)
+\]
+
+\end_inset
+
+עבור הווקטור 
+\begin_inset Formula $\left(0,1,0\right)$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccc}
+1 & 0 & 0\\
+1 & 1 & 0\\
+0 & 0 & 1
+\end{array}\right)\left(\begin{array}{c}
+0\\
+1\\
+0
+\end{array}\right)=\left(\begin{array}{c}
+0\\
+1\\
+0
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפני ההטלה הזווית בין 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $\left(1,0,0\right)$
+\end_inset
+
+ לבין 
+\begin_inset Formula $\left(0,1,0\right)$
+\end_inset
+
+היתה 
+\begin_inset Formula $90$
+\end_inset
+
+ מעלות.
+\end_layout
+
+\begin_layout Standard
+כעצ
+\series bold
+ לאחר ההטלה 
+\series default
+הזווית בין ההטלה של 
+\begin_inset Formula $\left(1,0,0\right)$
+\end_inset
+
+ לבין ההטלה של 
+\begin_inset Formula $\left(0,1,0\right)$
+\end_inset
+
+ היא הזווית שבין 
+\begin_inset Formula $\left(1,1,0\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left(0,1,0\right)$
+\end_inset
+
+ שהיא למעשה 
+\begin_inset Formula $45$
+\end_inset
+
+ מעלות.
+\end_layout
+
+\begin_layout Corollary
+הטרנס' אינה בהכרח משמרת זוויות.
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ג
+\end_layout
+
+\begin_layout Standard
+עבור טרנס' האפס 
+\begin_inset Formula $\forall q\in\mathbb{R}^{3}:T\left(q\right)\equiv0\in\mathbb{R}^{3}$
+\end_inset
+
+ הטרנספורמציה לא הפיכה.
+\end_layout
+
+\begin_layout Standard
+באופן כללי 
+\begin_inset Formula $T$
+\end_inset
+
+ יכולה להיות מתוארת על ידי מט' מדרגה שאינה מלאה ובכל מקרה כזה הטרנספ' יהיה
+ אינו הפיך.
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ד
+\end_layout
+
+\begin_layout Standard
+שוב נזכר בשקף המהמם הבא:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename pasted1.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנו יודעים כי מט' פרספקטיבית 
+\series bold
+אינה מוגדרת 
+\series default
+על כל המרחב )אלא רק על חצי מישור( ולכן 
+\begin_inset Formula $T:\mathbb{R}^{3}\rightarrow\mathbb{R}^{3}$
+\end_inset
+
+ לא יכולה להיות הטרנס' של הפרספקטיבה.
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $T$
+\end_inset
+
+ חייבת לשמר קווים מקבילים.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $p_{1},p_{2}\in\mathbb{R}^{3}$
+\end_inset
+
+ נקודות ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ ויהי 
+\begin_inset Formula $v\in\mathbb{R}^{3}$
+\end_inset
+
+ ווקטור ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נבחין כי 
+\begin_inset Formula $A$
+\end_inset
+
+ טרנס' לינאירית ולכן קיימת מט' 
+\begin_inset Formula $B\in\mathbb{R}^{3\times3}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $q\in\mathbb{R}^{3}:Aq=Bq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהיו שני הקווים המקבילים הבאים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall t\in\mathbb{R}:l_{1}\left(t\right):p_{1}+tv
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall t\in\mathbb{R}:l_{2}\left(t\right):p_{2}+tv
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\forall t\in\mathbb{R}:\widetilde{l_{1}\left(t\right)} & =T\left(l_{1}\left(t\right)\right)\\
+ & =T\left(p_{1}+tv\right)\\
+ & =A\left(p_{1}+tv\right)+b\\
+ & =Ap_{1}+tAv+b\\
+ & =\left(Ap_{1}+b\right)+tAv\\
+ & =\left(Bp_{1}+b\right)+t\left(Bv\right)
+\end{align*}
+
+\end_inset
+
+באופן דומה 
+\begin_inset Formula 
+\[
+\forall t\in\mathbb{R}:\widetilde{l_{2}\left(t\right)}=\left(Bp_{2}+b\right)+t\left(Bv\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר הראנו כי הקווים לאחר הטרנס' הם 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\forall t\in\mathbb{R}:\widetilde{l_{1}\left(t\right)}=\left(Bp_{1}+b\right)+t\left(Bv\right)\\
+\forall t\in\mathbb{R}:\widetilde{l_{2}\left(t\right)}=\left(Bp_{2}+b\right)+t\left(Bv\right)
+\end{array}
+\]
+
+\end_inset
+
+ניתן להיווכח שווקטור הכיוון 
+\begin_inset Formula $\left(Bv\right)$
+\end_inset
+
+ זהה עבור שני הקווים לאחר הטרנס' ולכן הקווים יישארו מקבילים גם לאחר הטנרס'.
+\end_layout
+
+\begin_layout Remark
+אני לא מחשיב מקרים שבהם 
+\begin_inset Formula $\left(Bv\right)=0$
+\end_inset
+
+ כלומר שהקווים קורסים לנקודה.במקרה זה שני הקווים ייקרסו לכדי נקודות ואין
+ משמעות/הגדרה מוסכמת לגבי הקבלה של שני נקודות.ולכן זה אינו המקרה שאליו התכוונו
+ אני מניח בעת כתיבת השאלה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה מספר
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+א
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename pasted2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמו שאני משתכנע התשובה היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\numeric off
+.
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\end_layout
+
+\begin_layout Remark
+אני הולך להוכיח משפטים הרבה יותר חזקים על מנת לפתור את הסעיף הזה.הולך להיות
+ פה 
+\begin_inset Formula $\text{overkill}$
+\end_inset
+
+ מטורף.
+\end_layout
+
+\begin_layout Standard
+נזכר קודם בהגדרה של צורה קמורה.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $C\text{ is convex}\iff\forall a,b\in C:\forall t\in\left[0,1\right]:ta+\left(1-t\right)b\in C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
+\begin_inset CommandInset label
+LatexCommand label
+name "claim:ריבוע צורה קמורה"
+
+\end_inset
+
+ריבוע 
+\begin_inset Formula $\square$
+\end_inset
+
+ הוא קבוצה קמורה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+יהא 
+\begin_inset Formula $k\in\mathbb{R}^{++}$
+\end_inset
+
+ כלשהו.נסמן את אורך צלע הריבוע 
+\begin_inset Formula $k$
+\end_inset
+
+.אזי הקבוצה ריבוע 
+\begin_inset Formula $C=\square$
+\end_inset
+
+ יכולה להיות מתוארת באופן הבא 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C=\left\{ \left(x,y\right)\mid-\frac{k}{2}\leq x\leq\frac{k}{2},-\frac{k}{2}\leq y\leq\frac{k}{2}\right\} 
+\]
+
+\end_inset
+
+יהיו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות 
+\begin_inset Formula $\unote{\left(a_{1},a_{2}\right)}{\equiv a},\unote{\left(b_{1},b_{2}\right)}{\equiv b}\in C$
+\end_inset
+
+ כלשהם.
+ אזי:
+\begin_inset Formula 
+\[
+a\in C\Rightarrow-\frac{k}{2}\leq a_{1}\leq\frac{k}{2},-\frac{k}{2}\leq a_{2}\leq\frac{k}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b\in C\Rightarrow-\frac{k}{2}\leq b_{1}\leq\frac{k}{2},-\frac{k}{2}\leq b_{2}\leq\frac{k}{2}
+\]
+
+\end_inset
+
+יהא 
+\begin_inset Formula $t\in\left[0,1\right]$
+\end_inset
+
+ כשלהוא אזי 
+\begin_inset Formula 
+\begin{align*}
+\star\star\star:ta+\left(1-t\right)b & =t\left(a_{1},a_{2}\right)+\left(1-t\right)\left(b_{1},b_{2}\right)\\
+ & =\left(ta_{1}+\left(1-t\right)b_{1},ta_{2}+\left(1-t\right)b_{2}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a\in C\Rightarrow-\frac{k}{2}\leq a_{1}\leq\frac{k}{2}\Rightarrow\boxed{-\frac{k}{2}t\leq a_{1}t\leq\frac{k}{2}t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b\in C\Rightarrow-\frac{k}{2}\leq b_{1}\leq\frac{k}{2}\Rightarrow\boxed{-\frac{k}{2}\left(1-t\right)\leq b_{1}\left(1-t\right)\leq\frac{k}{2}\left(1-t\right)}
+\]
+
+\end_inset
+
+מכאן נובע כי 
+\begin_inset Formula 
+\[
+-\frac{k}{2}t-\frac{k}{2}\left(1-t\right)\leq ta_{1}+\left(1-t\right)b_{1}\leq\frac{k}{2}t+\frac{k}{2}\left(1-t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\star\star:\boxed{-\frac{k}{2}\leq ta_{1}+\left(1-t\right)b_{1}\leq\frac{k}{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באופן זהה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\star:\boxed{-\frac{k}{2}\leq ta_{2}+\left(1-t\right)b_{2}\leq\frac{k}{2}}
+\]
+
+\end_inset
+
+הראנוכי 
+\begin_inset Formula $\star,\star\star$
+\end_inset
+
+ ולכן נובע כי 
+\begin_inset Formula 
+\[
+\left(ta_{1}+\left(1-t\right)b_{1},ta_{2}+\left(1-t\right)b_{2}\right)\in C
+\]
+
+\end_inset
+
+ לפי הגדרת 
+\begin_inset Formula $C$
+\end_inset
+
+.מ
+\begin_inset Formula $\star\star\star$
+\end_inset
+
+נובע כי 
+\begin_inset Formula $ta+\left(1-t\right)b\in C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כלומר הראנו כי 
+\begin_inset Formula $\forall a,b\in C:\forall t\in\left[0,1\right]:ta+\left(1-t\right)b\in C$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $C=\square$
+\end_inset
+
+ קבוצה קמורה.
+\end_layout
+
+\begin_layout Definition
+תהא 
+\begin_inset Formula $C\subseteq\mathbb{R}^{n}$
+\end_inset
+
+ קבוצה כלשהיא אזי לכל 
+\begin_inset Formula $q\in\mathbb{R}^{n}$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $q+C=\left\{ x+q\mid x\in C\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim
+\begin_inset CommandInset label
+LatexCommand label
+name "claim:כל הזזה של צורה קמורה נשארת קמורה"
+
+\end_inset
+
+לכל 
+\begin_inset Formula $n\in\mathbb{N}\backslash\left\{ 0\right\} $
+\end_inset
+
+ תהא 
+\begin_inset Formula $C\subseteq\mathbb{R}^{n}$
+\end_inset
+
+ קבוצה קמורה כלשהיא אזי לכל 
+\begin_inset Formula $q\in\mathbb{R}^{n}$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $q+C$
+\end_inset
+
+ קמורה גם היא.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a,b\in\left(q+C\right)$
+\end_inset
+
+ אזי מהגדרת 
+\begin_inset Formula $q+C$
+\end_inset
+
+ נובע כי 
+\begin_inset Formula $\exists c_{1},c_{2}\in C:a=c_{1}+q,b=c_{2}+q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מכיוון ש
+\begin_inset Formula $c_{1},c_{2}\in C$
+\end_inset
+
+ נובע כי לכל 
+\begin_inset Formula $j\in\left[0,1\right]$
+\end_inset
+
+ נובע כי 
+\begin_inset Formula $tc_{1}+\left(1-t\right)c_{2}\in C$
+\end_inset
+
+ )נסמן 
+\begin_inset Formula $\davidsstar$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+יהא 
+\begin_inset Formula $t\in\left[0,1\right]$
+\end_inset
+
+ כלשהו.
+\end_layout
+
+\begin_layout Standard
+אזי מתקיים 
+\begin_inset Formula 
+\begin{align*}
+at+b\left(1-t\right) & =\left(c_{1}+q\right)t+\left(c_{2}+q\right)\left(1-t\right)\\
+ & =\left(c_{1}t+qt\right)+c_{2}\left(1-t\right)+q\left(1-t\right)\\
+ & =\left(c_{1}t+\cancel{qt}\right)+c_{2}\left(1-t\right)+q\left(1-\cancel{t}\right)\\
+ & =\unote{tc_{1}+c_{2}\left(1-t\right)}{\in C\,\left(\text{from }\davidsstar\right)}+q\\
+ & \in q+C
+\end{align*}
+
+\end_inset
+
+ ולכן הוכחנו כי 
+\begin_inset Formula 
+\[
+\forall a,b\in q+C,\forall t\in\left[0,1\right]:at+b\left(1-t\right)\in q+C
+\]
+
+\end_inset
+
+ ולכן הראנו כי 
+\begin_inset Formula $q+C$
+\end_inset
+
+ קמורה.
+\end_layout
+
+\begin_layout Remark
+ניתן היה גם להוכיח עבור סיבובים זה אבל אובר קיל מוגזם.
+\end_layout
+
+\begin_layout Claim
+\begin_inset CommandInset label
+LatexCommand label
+name "claim:חיתוך של שני קבוצות קמורות הוא קמור"
+
+\end_inset
+
+יהא 
+\begin_inset Formula $C_{1},C_{2}$
+\end_inset
+
+ קבוצות קמורות אזי 
+\begin_inset Formula $C_{1}\cap C_{2}$
+\end_inset
+
+היא קבוצה קמורה.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $C_{1}\cap C_{2}=\emptyset$
+\end_inset
+
+ הגדרת הקמירות מתקיימת באופן ריק וסיימנו.אחרת 
+\begin_inset Formula $C_{1}\cap C_{2}\neq\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $C_{1}\text{ is convex}\Rightarrow\forall a,b\in C_{1}:\forall t\in\left[0,1\right]:ta+\left(1-t\right)b\in C_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $C_{2}\text{ is convex}\Rightarrow\forall x,y\in C_{2}:\forall t\in\left[0,1\right]:tx+\left(1-t\right)y\in C_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $m,n\in C_{1}\cap C_{2}$
+\end_inset
+
+.יהיא 
+\begin_inset Formula $t\in\left[0,1\right]$
+\end_inset
+
+.אזי 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m,n\in C_{1}\cap C_{2}$
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $m,n\in C_{1}$
+\end_inset
+
+ מהגדרת החיתוך.
+ ומכאן מהגדרת קמירות 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ נובע כי 
+\begin_inset Formula $m+\left(1-t\right)n\in C_{1}$
+\end_inset
+
+.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+tm+\left(1-t\right)n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m,n\in C_{1}\cap C_{2}$
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $m,n\in C_{2}$
+\end_inset
+
+ מהגדרת החיתוך.
+ ומכאן מהגדרת קמירות 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ נובע כי 
+\begin_inset Formula $m+\left(1-t\right)n\in C_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+הראנו כי 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $m+\left(1-t\right)n\in C_{1}$
+\end_inset
+
+ וגם כי 
+\begin_inset Formula $ $
+\end_inset
+
+ 
+\begin_inset Formula $m+\left(1-t\right)n\in C_{2}$
+\end_inset
+
+ ולכן מהגדרת החיתוך נובע כי 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $m+\left(1-t\right)n\in C_{1}\cap C_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הראנו כי 
+\begin_inset Formula $\forall m,n\in C_{1}\cap C_{2},\forall t\in\left[0,1\right]$
+\end_inset
+
+ מתקיים כי
+\begin_inset Formula $m+\left(1-t\right)n\in C_{1}\cap C_{2}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $C_{1}\cap C_{2}$
+\end_inset
+
+ צורה קמורה.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+נוכיח את המשפט
+\end_layout
+
+\begin_layout Claim
+\begin_inset CommandInset label
+LatexCommand label
+name "claim:כל ריבוע הוא צורה קמורה "
+
+\end_inset
+
+כל ריבוע הוא צורה קמורה.
+\end_layout
+
+\begin_layout Claim
+
+\series bold
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+יהא ריבוע 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ נסמן את האורך הצלע של 
+\begin_inset Formula $A$
+\end_inset
+
+ להיות 
+\begin_inset Formula $a$
+\end_inset
+
+ נסמן את מרכזו להיות 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $C$
+\end_inset
+
+ להיות קבוצה של הריבוע בעל אורך צלע 
+\begin_inset Formula $a$
+\end_inset
+
+ שממרוכז סביב הראשית.
+\end_layout
+
+\begin_layout Standard
+לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:ריבוע צורה קמורה"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נובע כי 
+\begin_inset Formula $C$
+\end_inset
+
+ קמור.אזי 
+\begin_inset Formula $A=C+\left(x,y\right)$
+\end_inset
+
+ צורה קמורה לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:כל הזזה של צורה קמורה נשארת קמורה"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim
+)הטענה הסופית שאנו רוצים להוכיח( חיתוך של הריבוע ושל צורה קמורה הוא צורה
+ קמורה בעצמו.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הוחכה:
+\end_layout
+
+\begin_layout Standard
+יהא הריבוע ,לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:כל ריבוע הוא צורה קמורה "
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נובע כי הוא צורה קמורה.לכן לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:חיתוך של שני קבוצות קמורות הוא קמור"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נובע שהחיתוך של הריבוע והצורה הקמורה הינו קמור.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ג
+\end_layout
+
+\begin_layout Standard
+אנו מחפשים פונ' 
+\begin_inset Formula $T:\mathbb{N}\backslash\left\{ 0,1,2\right\} \rightarrow\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+חסם תחתון טרוואלי על הפונק הזו הוא כמובן 
+\begin_inset Formula $n$
+\end_inset
+
+ )במקרה שהפולינום מוכל ממש בריבוע(.
+\end_layout
+
+\begin_layout Standard
+בנוסף מסעיף א' אנו יודעים כי 
+\begin_inset Formula $T\left(3\right)=7$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ג
+\begin_inset Formula 
+\[
+\xymatrix{ & \star\ar@{-}[rd]\\
+\sun\ar@{-}[ru] &  & \sun\ar@{-}[ld]\\
+ & \star\ar@{-}[lu]
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

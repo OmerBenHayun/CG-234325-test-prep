@@ -1,0 +1,43 @@
+#_____________________
+#cpu renderer code
+#_____________________
+#define HIGHT 512
+#define WIDTH HIGHT
+#define CHANNELS 1
+
+//...
+//...
+//...
+
+glActiveTexture(GL_TEXTURE); //enable textures
+//assuming the displacemnt buffer is already defined as GLubyte texels [HIGHT][WIDTH][CHANNELS];
+glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, HIGHT, WIDTH , 0, GL_RGB, GL_UNSIGNED_BYTE, texels);
+
+
+
+
+
+#_____________________
+#vshader.glsl code
+#_____________________
+#define INTENSEITY 10
+in vec2 texcoord;
+in vec4 vPosition;
+in vec4 normal;
+in vec4 in_color;
+out vec4 f_color;
+uniform sampler2D texMap;
+void main(){
+	f_color=in_color;
+	gl_Position=INTENSEITY*texture2D(texMap,texcoord)*normal+vPosition;
+
+}
+
+#_____________________
+#fshader.glsl code
+#_____________________
+in vec4 f_color;
+out vec4 color;
+void main(){
+	in_color=color;
+}

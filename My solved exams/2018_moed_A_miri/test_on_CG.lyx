@@ -3200,7 +3200,7 @@ status open
 \begin_inset Formula 
 \[
 A=\left(\begin{array}{cccc}
-5 & 0 & 0 & -25\\
+5 & 0 & 0 & 10\\
 3 & 7 & 0 & -15\\
 1 & 0 & 7 & -5\\
 1 & 0 & 0 & 2
@@ -3210,6 +3210,305 @@ A=\left(\begin{array}{cccc}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+הפעם מקור האור הוא נקודתי וממוקם ב 
+\begin_inset Formula $\left(x=-2,y=3,z=1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מניחים כי קור' 
+\begin_inset Formula $x$
+\end_inset
+
+ של הנקודה 
+\begin_inset Formula $p$
+\end_inset
+
+ היא בתחום 
+\begin_inset Formula $\left(-2,5\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נמצא דוגמא נגדית 
+\begin_inset Formula 
+\[
+\begin{array}{l}
+l_{1}(t)=p+tv\\
+l_{2}(t)=m+tv
+\end{array}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula 
+\[
+p=\left(-1,4,2\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m=\left(-1,2,0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v=\left(1,0,0\right)
+\]
+
+\end_inset
+
+ ואז נקבל כי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+l_{1}(t)=p+tv=\left(-1,4,2\right)+t\left(1,0,0\right)=\left(t-1,4,2\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+l_{2}(t)=m+tv=\left(-1,2,0\right)+t\left(1,0,0\right)=\left(t-1,2,0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקבל כי 
+\begin_inset Formula 
+\begin{align*}
+\widetilde{l_{1}(t)} & =A\left[l_{1}(t)\right]\\
+ & =\left(\begin{array}{cccc}
+5 & 0 & 0 & 10\\
+3 & 7 & 0 & -15\\
+1 & 0 & 7 & -5\\
+1 & 0 & 0 & 2
+\end{array}\right)\left(\begin{array}{c}
+t-1\\
+4\\
+2\\
+1
+\end{array}\right)\\
+ & =\left(\begin{array}{c}
+5\left(t-1\right)+10\\
+3\left(t-1\right)+7\cdot4-15\\
+t-1+7\cdot2-5\\
+t-1+2
+\end{array}\right)\\
+ & =\left(\begin{array}{c}
+5t-5+10\\
+3t-3+7\cdot4-15\\
+t+1+7\\
+t+1
+\end{array}\right)\\
+ & =\left(\begin{array}{c}
+5t+5\\
+3t+10\\
+t+1+7\\
+t+1
+\end{array}\right)\\
+ & \cong\left(\begin{array}{c}
+5\\
+1+\frac{7}{t+1}\\
+1
+\end{array}\right)\\
+ & =\left(\begin{array}{c}
+5\\
+1\\
+1
+\end{array}\right)+\frac{7}{t+1}\cdot\left(\begin{array}{c}
+0\\
+1\\
+0
+\end{array}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\widetilde{l_{2}(t)} & =A\left[l_{2}(t)\right]\\
+ & =\left(\begin{array}{cccc}
+5 & 0 & 0 & 10\\
+3 & 7 & 0 & -15\\
+1 & 0 & 7 & -5\\
+1 & 0 & 0 & 2
+\end{array}\right)\left(\begin{array}{c}
+t-1\\
+2\\
+0\\
+1
+\end{array}\right)\\
+ & =\left(\begin{array}{c}
+5\left(t-1\right)+10\\
+3\left(t-1\right)+14-15\\
+t-1-5\\
+t-1+2
+\end{array}\right)\\
+ & =\left(\begin{array}{c}
+5\left(t-1\right)+10\\
+3\left(t-1\right)-1\\
+t-1-5\\
+t-1+2
+\end{array}\right)\\
+ & =\left(\begin{array}{c}
+5t-5+10\\
+3t-3-1\\
+t-1-5\\
+t-1+2
+\end{array}\right)\\
+ & =\left(\begin{array}{c}
+5t+5\\
+3t-4\\
+t-6\\
+t+1
+\end{array}\right)\\
+ & =\left(\begin{array}{c}
+5\\
+\frac{3t-4}{t+1}\\
+\frac{t-6}{t+1}
+\end{array}\right)\\
+ & =\left(\begin{array}{c}
+5\\
+0\\
+0
+\end{array}\right)+\left(t+1\right)\left(\begin{array}{c}
+0\\
+3t-4\\
+t-6
+\end{array}\right)
+\end{align*}
+
+\end_inset
+
+כלומר 
+\begin_inset Formula 
+\[
+\widetilde{l_{1}(t)}=\left(\begin{array}{c}
+5\\
+1\\
+1
+\end{array}\right)+\frac{7}{t+1}\cdot\left(\begin{array}{c}
+0\\
+1\\
+0
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\widetilde{l_{2}(t)}=\left(\begin{array}{c}
+5\\
+0\\
+0
+\end{array}\right)+\left(t+1\right)\left(\begin{array}{c}
+0\\
+3t-4\\
+t-6
+\end{array}\right)
+\]
+
+\end_inset
+
+כלומר הווקטור 
+\begin_inset Formula $v$
+\end_inset
+
+ המוטל הוא לא אותו ווקטור ולכן אין מנוס מלהכריע כי ההטלה לא משמרת קווים
+ מקבילים.
+\end_layout
+
+\begin_layout Remark
+לא יודע אם זה דוגמא נגדית הכי טובה...אבל זורם עם זה בנתיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align*}
+A\left[l_{1}(t)\right] & =\left(\begin{array}{cccc}
+5 & 0 & 0 & 10\\
+3 & 7 & 0 & -15\\
+1 & 0 & 7 & -5\\
+1 & 0 & 0 & 2
+\end{array}\right)\left(\begin{array}{c}
+p_{x}+tv_{x}\\
+p_{y}+tv_{y}\\
+p_{z}+tv_{z}\\
+1
+\end{array}\right)\\
+ & =\left(\begin{array}{cccc}
+5 & 0 & 0 & 10\\
+3 & 7 & 0 & -15\\
+1 & 0 & 7 & -5\\
+1 & 0 & 0 & 2
+\end{array}\right)\left(\begin{array}{c}
+p_{x}+tv_{x}\\
+p_{y}+tv_{y}\\
+p_{z}+tv_{z}\\
+1
+\end{array}\right)\\
+ & =\left(\begin{array}{c}
+5\left(p_{x}+tv_{x}\right)+10\\
+3\left(p_{x}+tv_{x}\right)+7\left(p_{y}+tv_{y}\right)-15\\
+\left(p_{x}+tv_{x}\right)+7\left(p_{z}+tv_{z}\right)-5\\
+\left(p_{x}+tv_{x}\right)+2
+\end{array}\right)\\
+ & =\left(\begin{array}{c}
+5\left(p_{x}+tv_{x}+2-2\right)+10\\
+3\left(p_{x}+tv_{x}+2-2\right)+7\left(p_{y}+tv_{y}\right)-15\\
+\left(p_{x}+tv_{x}+2-2\right)+7\left(p_{z}+tv_{z}\right)-5\\
+\left(p_{x}+tv_{x}\right)+2
+\end{array}\right)\\
+ & =\left(\begin{array}{c}
+5\left(p_{x}+tv_{x}+2\right)\\
+3\left(p_{x}+tv_{x}+2\right)+7\left(p_{y}+tv_{y}\right)-21\\
+\left(p_{x}+tv_{x}+2\right)+7\left(p_{z}+tv_{z}\right)-7\\
+\left(p_{x}+tv_{x}\right)+2
+\end{array}\right)\\
+ & \cong\left(\begin{array}{c}
+5\\
+3+7\left(p_{y}+tv_{y}\right)-\frac{21}{\left(p_{x}+tv_{x}+2\right)}\\
+1+7\left(p_{z}+tv_{z}\right)-\frac{7}{\left(p_{x}+tv_{x}+2\right)}\\
+1
+\end{array}\right)\\
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align*}
 A\left[l_{1}(t)\right] & =\left(\begin{array}{cccc}
@@ -3273,6 +3572,16 @@ A\left[l_{2}(t)\right]=\left(5,m_{y}+tv_{y},m_{z}+tv_{z}\right)
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \align center
 
@@ -3281,8 +3590,36 @@ A\left[l_{2}(t)\right]=\left(5,m_{y}+tv_{y},m_{z}+tv_{z}\right)
 \end_layout
 
 \begin_layout Standard
+תשובת המתרגלת
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename pasted9.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename pasted10.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 מתקשה להבין את האופן שבו עלי לפתור את סעיף ב'....
