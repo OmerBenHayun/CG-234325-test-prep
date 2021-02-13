@@ -3444,7 +3444,7 @@ t-6
 \end_layout
 
 \begin_layout Remark
-לא יודע אם זה דוגמא נגדית הכי טובה.
+לא יודע אם זה דוגמא נגדית הכי טובה...אבל זורם עם זה בנתיים
 \end_layout
 
 \begin_layout Standard
@@ -4340,7 +4340,7 @@ illumination
 
 \begin_layout Standard
 השיינינס )הברקה( היא 
-\begin_inset Formula $\alpha=0.5$
+\begin_inset Formula $\alpha=5$
 \end_inset
 
 .
@@ -5907,15 +5907,49 @@ q_{u}=q\left(\theta_{u},u\right)=\left(\cos\frac{\theta_{u}}{2},\sin\frac{\theta
 
 \begin_inset Formula 
 \[
-q_{v}=q\left(\theta_{v},v\right)=\left(\cos\frac{\theta_{v}}{2},\sin\frac{\theta_{v}}{2}v_{x},\sin\frac{\theta_{v}}{2}v_{y},\sin\frac{\theta_{v}}{2}v_{z}\right)
+q_{v}=q\left(\theta_{v},v\right)=\left(\cos\frac{\theta_{v}}{2},\sin\frac{\theta_{v}}{2}v\right)=\left(\cos\frac{\theta_{v}}{2},\sin\frac{\theta_{v}}{2}v_{x},\sin\frac{\theta_{v}}{2}v_{y},\sin\frac{\theta_{v}}{2}v_{z}\right)
 \]
 
 \end_inset
 
 לכן:
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
-q_{u}q_{v}=\left[\left(\cos\frac{\theta_{u}}{2}\right)\cdot\left(\cos\frac{\theta_{v}}{2}\right)+u\cdot v,\left(\cos\left(\frac{\theta_{u}}{2}\right)\right)v+\left(\cos\left(\frac{\theta_{v}}{2}\right)\right)u+u\times v\right]
+q_{u}q_{v}=\left[\left(\cos\frac{\theta_{u}}{2}\right)\cdot\left(\cos\frac{\theta_{v}}{2}\right)+u\cdot v,\left(\cos\left(\frac{\theta_{u}}{2}\right)\right)\left(\sin\left(\frac{\theta_{v}}{2}\right)\right)v+\left(\cos\left(\frac{\theta_{v}}{2}\right)\right)u+u\times v\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+q_{u}\cdot q_{v}=\left[\left(\cos\frac{\theta_{u}}{2}\right)\left(\cos\frac{\theta_{v}}{2}\right)-\left(\sin\left(\frac{\theta_{u}}{2}\right)\left(\sin\frac{\theta_{u}}{2}u\right)\right)\cdot\left(\sin\left(\frac{\theta_{v}}{2}\right)v\right),\left(\cos\frac{\theta_{u}}{2}\right)\left(\sin\left(\frac{\theta_{v}}{2}\right)v\right)+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\left(\frac{\theta_{u}}{2}\right)u\right)+\left(\sin\left(\frac{\theta_{u}}{2}\right)u\right)\times\left(\sin\left(\frac{\theta_{v}}{2}\right)v\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q_{1}\cdot q_{2}=\left[\unote{s_{1}}{\cos\frac{\theta_{u}}{2}},\unote{v_{1}}{\sin\frac{\theta_{u}}{2}u}\right]\cdot\left[\unote{s_{2}}{\cos\frac{\theta_{v}}{2}},\unote{v_{2}}{\sin\frac{\theta_{v}}{2}v}\right]=\left[\unote{s_{1}}{\cos\frac{\theta_{u}}{2}}\unote{s_{2}}{\cos\frac{\theta_{v}}{2}}-\unote{v_{1}}{\sin\frac{\theta_{u}}{2}u}\cdot\unote{v_{2}}{\sin\frac{\theta_{v}}{2}v},\unote{s_{1}}{\cos\frac{\theta_{u}}{2}}\unote{v_{2}}{\sin\frac{\theta_{v}}{2}v}+\unote{s_{2}}{\cos\frac{\theta_{v}}{2}}\unote{v_{1}}{\sin\frac{\theta_{u}}{2}u}+\unote{v_{1}}{\sin\frac{\theta_{u}}{2}u}\times\unote{v_{2}}{\sin\frac{\theta_{v}}{2}v}\right]
 \]
 
 \end_inset
@@ -6018,7 +6052,18 @@ q_{u}q_{v} & =\\
  נתון על ידי 
 \begin_inset Formula 
 \[
-\left(\cos\left(\frac{\theta_{u}}{2}\right)\right)v+\left(\cos\left(\frac{\theta_{v}}{2}\right)\right)u+u\times v
+\unote{s_{1}}{\cos\frac{\theta_{u}}{2}}\unote{v_{2}}{\sin\frac{\theta_{v}}{2}v}+\unote{s_{2}}{\cos\frac{\theta_{v}}{2}}\unote{v_{1}}{\sin\frac{\theta_{u}}{2}u}+\unote{v_{1}}{\sin\frac{\theta_{u}}{2}u}\times\unote{v_{2}}{\sin\frac{\theta_{v}}{2}v}
+\]
+
+\end_inset
+
+כלומר על ידי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\cos\frac{\theta_{u}}{2}\right)\left(\sin\frac{\theta_{v}}{2}\right)v+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)u+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)\left(u\times v\right)
 \]
 
 \end_inset
@@ -6029,7 +6074,7 @@ q_{u}q_{v} & =\\
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{\left(\cos\left(\frac{\theta_{u}}{2}\right)\right)v+\left(\cos\left(\frac{\theta_{v}}{2}\right)\right)u+u\times v}{\left\Vert \left(\cos\left(\frac{\theta_{u}}{2}\right)\right)v+\left(\cos\left(\frac{\theta_{v}}{2}\right)\right)u+u\times v\right\Vert }
+\frac{\left(\cos\frac{\theta_{u}}{2}\right)\left(\sin\frac{\theta_{v}}{2}\right)v+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)u+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)\left(u\times v\right)}{\left\Vert \left(\cos\frac{\theta_{u}}{2}\right)\left(\sin\frac{\theta_{v}}{2}\right)v+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)u+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)\left(u\times v\right)\right\Vert }
 \]
 
 \end_inset
