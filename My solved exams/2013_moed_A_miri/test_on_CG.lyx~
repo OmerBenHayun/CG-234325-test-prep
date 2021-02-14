@@ -6883,10 +6883,365 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
+\align center
 
 \size huge
 פרסמתי שאלה בדיסקורד איך /אם אנחנו אמורים לפתור את זה מעבר לתשובה סופית
  ואם כן צריך לנמק אז מה הנימוק הרצוי
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename pasted16.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמשיך בפתרון:
+\end_layout
+
+\begin_layout Standard
+נעביר אגף 
+\begin_inset Formula 
+\[
+\forall t\in\left[0,1\right]:\begin{array}{c}
+a^{2}t^{6}+2abt^{5}+2act^{4}+2adt^{3}+b^{2}t^{4}+2bct^{3}+2bdt^{2}+c^{2}t^{2}+2cdt+d^{2}\\
+l^{2}t^{6}+2lmt^{5}+2lnt^{4}+2lpt^{3}+m^{2}t^{4}+2mnt^{3}+2mpt^{2}+n^{2}t^{2}+2npt+p^{2}
+\end{array}-1=0
+\]
+
+\end_inset
+
+נקבץ אגפים 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall t\in\left[0,1\right]:\begin{array}{c}
+\left(a^{2}+l^{2}\right)t^{6}+\left(2lm+2ab\right)t^{5}+\left(2ln+2ac+m^{2}+b^{2}\right)t^{4}+\left(2lp+2ad+2mn+2bc\right)t^{3}\\
+\left(2mp+2bd+n^{2}+c^{2}\right)t^{2}+\left(2cd+2np\right)t+\left(p^{2}+d^{2}-1\right)\cdot1
+\end{array}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר יש לנו פולינום ממעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+\end_layout
+
+\begin_layout Standard
+נבודד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משוואות לדוגמא:
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula 
+\[
+\forall t:\left\{ \frac{i}{10}\mid i\in\left\{ 1,\ldots,7\right\} \right\} :\begin{array}{c}
+\left(a^{2}+l^{2}\right)t^{6}+\left(2lm+2ab\right)t^{5}+\left(2ln+2ac+m^{2}+b^{2}\right)t^{4}+\left(2lp+2ad+2mn+2bc\right)t^{3}\\
+\left(2mp+2bd+n^{2}+c^{2}\right)t^{2}+\left(2cd+2np\right)t+\left(p^{2}+d^{2}-1\right)\cdot1
+\end{array}=0
+\]
+
+\end_inset
+
+הפתרון 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\left(a^{2}+l^{2}\right)=0\\
+\left(2lm+2ab\right)=0\\
+\left(2ln+2ac+m^{2}+b^{2}\right)=0\\
+\left(2lp+2ad+2mn+2bc\right)=0\\
+\left(2mp+2bd+n^{2}+c^{2}\right)=0\\
+\left(2cd+2np\right)=0\\
+\left(p^{2}+d^{2}-1\right)=0
+\end{array}
+\]
+
+\end_inset
+
+מכאן נסיק כי 
+\begin_inset Formula 
+\[
+a=b=l=m=n=c=0
+\]
+
+\end_inset
+
+ ונקבל 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+0=0\\
+0=0\\
+0=0\\
+0=0\\
+0=0\\
+0=0\\
+\left(p^{2}+d^{2}-1\right)=0
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+כלומר נקבל כי 
+\begin_inset Formula 
+\[
+p=d=\pm\sqrt{\frac{1}{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+נזכיר את הסימון ממקודם
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+C\left(t\right)=\left(P_{x}\left(t\right),P_{y}\left(t\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $P_{x},P_{y}$
+\end_inset
+
+פולינומים מתוך עקום בזייה קובי ולכן דרגתם היא לכל היותר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+.ולכן נוכל לסמן
+\begin_inset Formula 
+\[
+\forall t\in\left[0,1\right]:P_{x}\left(t\right)=at^{3}+bt^{2}+ct+d
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall t\in\left[0,1\right]:P_{y}\left(t\right)=lt^{3}+mt^{2}+nt+p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן מכאן נובע כי 
+\begin_inset Formula 
+\[
+\forall t\in\left[0,1\right]:P_{x}\left(t\right)=d,\forall t\in\left[0,1\right]:P_{y}\left(t\right)=p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ומכאו יינבע כי 
+\begin_inset Formula 
+\[
+\forall t\in\left[0,1\right]:C\left(t\right)=\left(P_{x}\left(t\right),P_{y}\left(t\right)\right)=\left(d,p\right)
+\]
+
+\end_inset
+
+כלומר במקרה זה 
+\begin_inset Formula $C$
+\end_inset
+
+ הוא עקום נקודה בפרט אינו חצי מעגל.
+\end_layout
+
+\begin_layout Standard
+סתירה.
+\end_layout
+
+\begin_layout Standard
+כ
 \end_layout
 
 \begin_layout Subsection

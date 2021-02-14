@@ -5897,6 +5897,8 @@ q_{v}=q\left(\theta_{v},v\right)
 \end_inset
 
 
+\size tiny
+
 \begin_inset Formula 
 \[
 q_{u}=q\left(\theta_{u},u\right)=\left(\cos\frac{\theta_{u}}{2},\sin\frac{\theta_{u}}{2}u\right)=\left(\cos\frac{\theta_{u}}{2},\sin\frac{\theta_{u}}{2}u_{x},\sin\frac{\theta_{u}}{2}u_{y},\sin\frac{\theta_{u}}{2}u_{z}\right)
@@ -5914,7 +5916,7 @@ q_{v}=q\left(\theta_{v},v\right)=\left(\cos\frac{\theta_{v}}{2},\sin\frac{\theta
 
 לכן:
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Formula 
@@ -5931,7 +5933,7 @@ q_{u}q_{v}=\left[\left(\cos\frac{\theta_{u}}{2}\right)\cdot\left(\cos\frac{\thet
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Formula 
@@ -5958,6 +5960,8 @@ q_{1}\cdot q_{2}=\left[\unote{s_{1}}{\cos\frac{\theta_{u}}{2}},\unote{v_{1}}{\si
 \end_layout
 
 \begin_layout Standard
+
+\size tiny
 \begin_inset Note Note
 status collapsed
 
@@ -6045,6 +6049,8 @@ q_{u}q_{v} & =\\
 \end_layout
 
 \begin_layout Standard
+
+\size tiny
 כלומר
 \series bold
  ציר הסיבוב של הקוונטריון
@@ -6061,9 +6067,11 @@ q_{u}q_{v} & =\\
 \end_layout
 
 \begin_layout Standard
+
+\size tiny
 \begin_inset Formula 
 \[
-\left(\cos\frac{\theta_{u}}{2}\right)\left(\sin\frac{\theta_{v}}{2}\right)v+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)u+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)\left(u\times v\right)
+\left(\cos\frac{\theta_{u}}{2}\right)\left(\sin\frac{\theta_{v}}{2}\right)v+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)u+\left(\sin\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)\left(u\times v\right)
 \]
 
 \end_inset
@@ -6072,6 +6080,8 @@ q_{u}q_{v} & =\\
 \end_layout
 
 \begin_layout Standard
+
+\size tiny
 \begin_inset Formula 
 \[
 \frac{\left(\cos\frac{\theta_{u}}{2}\right)\left(\sin\frac{\theta_{v}}{2}\right)v+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)u+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)\left(u\times v\right)}{\left\Vert \left(\cos\frac{\theta_{u}}{2}\right)\left(\sin\frac{\theta_{v}}{2}\right)v+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)u+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)\left(u\times v\right)\right\Vert }

@@ -6071,7 +6071,7 @@ q_{u}q_{v} & =\\
 \size tiny
 \begin_inset Formula 
 \[
-\left(\cos\frac{\theta_{u}}{2}\right)\left(\sin\frac{\theta_{v}}{2}\right)v+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)u+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)\left(u\times v\right)
+\left(\cos\frac{\theta_{u}}{2}\right)\left(\sin\frac{\theta_{v}}{2}\right)v+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)u+\left(\sin\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)\left(u\times v\right)
 \]
 
 \end_inset
@@ -6084,7 +6084,7 @@ q_{u}q_{v} & =\\
 \size tiny
 \begin_inset Formula 
 \[
-\frac{\left(\cos\frac{\theta_{u}}{2}\right)\left(\sin\frac{\theta_{v}}{2}\right)v+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)u+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)\left(u\times v\right)}{\left\Vert \left(\cos\frac{\theta_{u}}{2}\right)\left(\sin\frac{\theta_{v}}{2}\right)v+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)u+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)\left(u\times v\right)\right\Vert }
+\frac{\left(\cos\frac{\theta_{u}}{2}\right)\left(\sin\frac{\theta_{v}}{2}\right)v+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)u+\left(\sin\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)\left(u\times v\right)}{\left\Vert \left(\cos\frac{\theta_{u}}{2}\right)\left(\sin\frac{\theta_{v}}{2}\right)v+\left(\cos\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)u+\left(\sin\frac{\theta_{v}}{2}\right)\left(\sin\frac{\theta_{u}}{2}\right)\left(u\times v\right)\right\Vert }
 \]
 
 \end_inset
